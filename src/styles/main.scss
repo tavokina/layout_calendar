@@ -13,7 +13,7 @@
   @for $e from $min-days through $max-days {
     &--month-length-#{$e} {
       $hidden-days: $max-days - $e;
-      .calendar__day:nth-last-child(-n+#{$hidden-days}) {
+      .calendar__day:nth-last-child(-n + #{$hidden-days}) {
         visibility: hidden;
       }
     }
@@ -39,7 +39,7 @@
 
     @for $i from 1 through 31 {
       &:nth-child(#{$i})::before {
-        content: "#{$i}";
+        content: '#{$i}';
         color: $main-color;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 30px;
@@ -49,10 +49,6 @@
       cursor: pointer;
       background-color: $bgcolor-hover;
       transform: translateY(-20px);
-
     }
   }
 }
-
-
-

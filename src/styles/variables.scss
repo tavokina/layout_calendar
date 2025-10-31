@@ -1,14 +1,12 @@
 $day-width: 100px;
 $horizontal-padding: 10px;
 $days-gap: 1px;
-$calendar-width:
-($day-width * 7) +
-($horizontal-padding * 2) +
-($days-gap * 6);
+$calendar-width: ($day-width * 7) + ($horizontal-padding * 2) + ($days-gap * 6);
 $bgcolor: #eee;
-$bgcolor-hover: #FFBFCB;
+$bgcolor-hover: #ffbfcb;
 $main-color: #000;
-$month-length: (28, 29, 30, 31);
+$min-days: 28;
+$max-days: 31;
 $days: (
   mon: 0,
   tue: 1,
@@ -16,6 +14,5 @@ $days: (
   thu: 3,
   fri: 4,
   sat: 5,
-  sun: 6
+  sun: 6,
 );
-
