@@ -35,7 +35,7 @@
 
     @each $day, $index in $days {
       .calendar--start-day-#{$day} .calendar__day:first-child {
-          margin-left: calc(#{$index} * (#{$day-width} + #{$days-gap}));
+          margin-left: $index * ($day-width + $days-gap);
         }
       }
 
